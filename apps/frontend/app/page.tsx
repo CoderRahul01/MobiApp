@@ -6,17 +6,15 @@ import { Hero } from "@/components/hero";
 export default function Home() {
   return (
     <SidebarInset className="bg-transparent">
-      <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-        <div className="space-y-4 px-4">
-          <div className="space-y-4">
-            <Appbar />
+      <div className="flex flex-1 flex-col gap-4 p-4 md:p-6 pt-0">
+        <Appbar />
+        
+        <div className="flex-1 flex flex-col justify-center items-center max-w-4xl mx-auto w-full">
+          <div className="space-y-8 w-full">
+            <Hero />
 
-            <div className="max-w-2xl mx-auto pt-32">
-    	      <Hero />
-
-              <div className="pt-4">
-                <Prompt />
-              </div>
+            <div className="pt-4 w-full">
+              <Prompt />
             </div>
           </div>
         </div>

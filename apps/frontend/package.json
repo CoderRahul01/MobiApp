@@ -6,11 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "msw:init": "msw init public --save",
-    "shadcn:add": "node scripts/add-component.mjs",
-    "component:add": "powershell -ExecutionPolicy Bypass -File ./install-component.ps1",
-    "component:add:unix": "bash ./install-component.sh"
+    "lint": "next lint"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.12.1",
@@ -33,6 +29,8 @@
     "next-themes": "^0.4.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-particles": "^2.12.2",
+    "react-tsparticles": "^2.12.2",
     "sonner": "^2.0.1",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
@@ -47,13 +45,6 @@
     "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.2.1-canary.1",
-    "@eslint/eslintrc": "^3",
-    "msw": "^2.7.3",
-    "@types/bun": "latest"
-  },
-  "msw": {
-    "workerDirectory": "public"
-  },
-  "module": "index.ts",
-  "type": "module"
+    "@eslint/eslintrc": "^3"
+  }
 }

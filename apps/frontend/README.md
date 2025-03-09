@@ -20,24 +20,6 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Custom UI Component Installation
-
-This project uses [shadcn/ui](https://ui.shadcn.com/) for UI components. Due to conflicts with MSW postinstall scripts, we've created custom scripts to safely install shadcn components.
-
-To add new shadcn components:
-
-```bash
-# For Windows:
-bun run component:add <component-name>
-
-# For Unix/Linux/Mac:
-bun run component:add:unix <component-name>
-```
-
-For detailed documentation on these scripts, see:
-- [CHANGELOG.md](./CHANGELOG.md) - History of changes made to fix MSW issues
-- [CUSTOM_COMPONENT_SCRIPTS.md](./CUSTOM_COMPONENT_SCRIPTS.md) - Detailed usage instructions
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
